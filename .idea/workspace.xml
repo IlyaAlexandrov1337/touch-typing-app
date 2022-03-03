@@ -4,8 +4,6 @@
     <list default="true" id="5dd9e5b0-9cc6-4e10-b2ad-125ba56edea0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -53,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1646100922367</updated>
-      <workItem from="1646100925676" duration="10001000" />
+      <workItem from="1646100925676" duration="27194000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Create-react-app">
       <created>1646113402388</created>
@@ -62,7 +60,21 @@
       <option name="project" value="LOCAL" />
       <updated>1646113402389</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed linter and installed MUI">
+      <created>1646180727061</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1646180727061</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed linter">
+      <created>1646180751953</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1646180751953</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -70,6 +82,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initialized Create-react-app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialized Create-react-app" />
+    <MESSAGE value="Fixed linter and installed MUI" />
+    <MESSAGE value="Fixed linter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed linter" />
   </component>
 </project>
