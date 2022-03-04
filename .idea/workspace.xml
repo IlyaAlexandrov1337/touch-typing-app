@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5dd9e5b0-9cc6-4e10-b2ad-125ba56edea0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
+    <list default="true" id="5dd9e5b0-9cc6-4e10-b2ad-125ba56edea0" name="Changes" comment="Removed MUI, added Aphrodite.js">
+      <change afterPath="$PROJECT_DIR$/src/style.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SimpleRuningLine/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SimpleRuningLine/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SimpleRuningLine/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SimpleRuningLine/style.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,11 +41,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/SimpleChooseComponent" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\WarBr1nger\WebstormProjects\touch-typing-app\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="ts.external.directory.path" value="C:\Users\WarBr1nger\WebstormProjects\touch-typing-app\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\WarBr1nger\WebstormProjects\touch-typing-app\src\components\SimpleChooseComponent" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -51,7 +61,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1646100922367</updated>
-      <workItem from="1646100925676" duration="27194000" />
+      <workItem from="1646100925676" duration="30471000" />
+      <workItem from="1646424081618" duration="3356000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Create-react-app">
       <created>1646113402388</created>
@@ -74,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646180751953</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Base Implementation of SimpleRunningLine">
+      <created>1646351979262</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1646351979262</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,6 +102,8 @@
     <MESSAGE value="Initialized Create-react-app" />
     <MESSAGE value="Fixed linter and installed MUI" />
     <MESSAGE value="Fixed linter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed linter" />
+    <MESSAGE value="Base Implementation of SimpleRunningLine" />
+    <MESSAGE value="Removed MUI, added Aphrodite.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed MUI, added Aphrodite.js" />
   </component>
 </project>

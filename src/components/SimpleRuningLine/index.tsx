@@ -1,20 +1,23 @@
 import React, { useState } from 'react';
-import { Box } from "@mui/material";
-import { useKeyPress} from "../../hooks/useKeyPress";
+import { css } from 'aphrodite'
+import { useKeyPress } from "../../hooks/useKeyPress";
 import { generate } from "../../utils/words";
 import { currentTime } from '../../utils/time';
 import { style } from "./style"
+import { useBeforeUnload } from 'react-use';
+
 
 const initialWords = generate();
-const currentStyle = style('black')
 
 export function SimpleRunningLineComponent() {
+    useBeforeUnload(true, 'You have unsaved changes, are you sure?');
+
     const [leftPadding, setLeftPadding] = useState(
         new Array(20).fill(' ').join(''),
     );
     const [outgoingChars, setOutgoingChars] = useState('');
     const [currentChar, setCurrentChar] = useState(initialWords.charAt(0));
-    const [incomingChars, setIncomingChars] = useState(initialWords.substr(1));
+    const [incomingChars, setIncomingChars] = useState(initialWords.substring(1));
 
     const [startTime, setStartTime] = useState(0);
     const [wordCount, setWordCount] = useState(0);
@@ -62,15 +65,15 @@ export function SimpleRunningLineComponent() {
     });
 
     return (
-        <Box component="p" sx={currentStyle.Character}>
-          <Box component="span" sx={currentStyle.CharacterOut}>
+        <p className={css(style('black').Character)}>
+          <span className={css(style('black').CharacterOut)}>
             {(leftPadding + outgoingChars).slice(-20)}
-          </Box>
-          <Box component="span" sx={currentStyle.CharacterCurrent}>{currentChar}</Box>
-          <Box component="span">{incomingChars.substring(0, 20)}</Box>
+          </span>
+          <span className={css(style('black').CharacterCurrent)}>{currentChar}</span>
+          <span>{incomingChars.substring(0, 20)}</span>
             <h3>
                 WPM: {wpm} | ACC: {accuracy}%
             </h3>
-        </Box>
+        </p>
     );
 }

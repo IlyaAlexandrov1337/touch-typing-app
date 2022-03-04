@@ -1,4 +1,6 @@
-export const style = (theme: string) => ({
+import { StyleSheet } from 'aphrodite';
+
+export const style = (theme: string) => StyleSheet.create({
     Character: {
         whiteSpace: 'pre',
         color: 'white',

@@ -1,25 +1,15 @@
 import React from 'react';
 import './App.css'
-import { Box } from "@mui/material";
+import { css } from 'aphrodite'
 import { SimpleRunningLineComponent } from "./components/SimpleRuningLine";
+import { style } from "./style";
 
 //'rgba(0, 0, 0, 0.04)',
 function App() {
   return (
-      <Box
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-          sx={{
-              textAlign: 'center',
-              fontFamily: 'monospace',
-              fontSize: 'large',
-              minHeight: "100vh",
-              backgroundColor: '#282c34',
-          }}
-      >
+      <div className={css(style('a').main)}>
         <SimpleRunningLineComponent />
-      </Box>
+      </div>
   );
 }
 
