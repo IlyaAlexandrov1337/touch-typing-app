@@ -1,7 +1,7 @@
 import { StyleSheet } from 'aphrodite';
 
 export const style = (theme: string) => StyleSheet.create({
-    Character: {
+    Text: {
         whiteSpace: 'pre',
         color: 'white',
     },

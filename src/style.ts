@@ -10,5 +10,6 @@ export const style = (theme: string) => StyleSheet.create({
         fontSize: 'large',
         minHeight: "100vh",
         backgroundColor: '#282c34',
+        color: 'white'
     }
 })

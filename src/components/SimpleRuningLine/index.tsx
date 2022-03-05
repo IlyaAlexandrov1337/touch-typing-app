@@ -7,11 +7,10 @@ import { style } from "./style"
 import { useBeforeUnload } from 'react-use';
 
 
-const initialWords = generate();
 
-export function SimpleRunningLineComponent() {
-    useBeforeUnload(true, 'You have unsaved changes, are you sure?');
-
+export function SimpleRunningLineComponent({count} : { count: number }) {
+    //useBeforeUnload(true, 'You have unsaved changes, are you sure?');
+    const initialWords = generate(count);
     const [leftPadding, setLeftPadding] = useState(
         new Array(20).fill(' ').join(''),
     );
@@ -32,7 +31,6 @@ export function SimpleRunningLineComponent() {
         }
 
         let updatedOutgoingChars = outgoingChars;
-        let updatedIncomingChars = incomingChars;
         if (key === currentChar) {
             if (leftPadding.length > 0) {
                 setLeftPadding(leftPadding.substring(1));
@@ -42,11 +40,10 @@ export function SimpleRunningLineComponent() {
 
             setCurrentChar(incomingChars.charAt(0));
 
-            updatedIncomingChars = incomingChars.substring(1);
-            if (updatedIncomingChars.split(' ').length < 10) {
-                updatedIncomingChars += ' ' + generate();
+            if (incomingChars.length === 0) {
+                console.log("ABA")
             }
-            setIncomingChars(updatedIncomingChars);
+            setIncomingChars(incomingChars.substring(1));
 
             if (incomingChars.charAt(0) === ' ') {
                 setWordCount(wordCount + 1);
@@ -65,15 +62,17 @@ export function SimpleRunningLineComponent() {
     });
 
     return (
-        <p className={css(style('black').Character)}>
-          <span className={css(style('black').CharacterOut)}>
-            {(leftPadding + outgoingChars).slice(-20)}
-          </span>
-          <span className={css(style('black').CharacterCurrent)}>{currentChar}</span>
-          <span>{incomingChars.substring(0, 20)}</span>
+        <div className={css(style('black').Text)}>
+            <p >
+              <span className={css(style('black').CharacterOut)}>
+                {(leftPadding + outgoingChars).slice(-20)}
+              </span>
+              <span className={css(style('black').CharacterCurrent)}>{currentChar}</span>
+              <span>{incomingChars.substring(0, 20)}</span>
+            </p>
             <h3>
                 WPM: {wpm} | ACC: {accuracy}%
             </h3>
-        </p>
+        </div>
     );
 }
