@@ -2,15 +2,13 @@ import { StyleSheet } from 'aphrodite';
 
 export const style = (theme: string) => StyleSheet.create({
     Main: {
-        position: 'fixed',
-        top: 0,
-        width: '100%',
+        width:'100%',
         background: 'lightgray',
-        height: '85px',
+        flexShrink: 0,
+        height: '10vh',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        padding: '0.2rem calc((100vw - 1000px) / 2)',
         zIndex: 12,
     },
 
@@ -18,6 +16,7 @@ export const style = (theme: string) => StyleSheet.create({
         cursor: 'pointer',
         marginRight: '24px',
         marginLeft: '24px',
+
         color: '#fff',
         fontSize: '2rem',
         textDecoration: 'none',
@@ -32,14 +31,11 @@ export const style = (theme: string) => StyleSheet.create({
         padding: '0 1rem',
         height: '100%',
         cursor: 'pointer',
-        '&:hover': {
-          color: 'black',
-        }
     },
 
     Bars: {
         display: 'none',
-        color: '#fff',
+        color: 'black',
         '@media screen and (max-width: 768px)': {
             display: 'block',
             position: 'absolute',
@@ -71,19 +67,18 @@ export const style = (theme: string) => StyleSheet.create({
 
     ButtonLink: {
         borderRadius: '4px',
+        fontWeight: 'bold',
         background: 'transparent',
         padding: '10px 22px',
-        color: '#fff',
+        color: 'black',
         outline: 'none',
-        border: '1px solid #fff',
+        border: '2px solid black',
         cursor: 'pointer',
-        transition: 'all 0.2s ease-in-out',
         textDecoration: 'none',
-        marginLeft: '24px',
-        '&:hover': {
-            transition: 'all 0.2s ease-in-out',
-            background: '#fff',
-            color: '#808080',
-        }
+        marginLeft: '12px',
+    },
+
+    Toggle: {
+        backgroundColor: 'yellow'
     }
 })

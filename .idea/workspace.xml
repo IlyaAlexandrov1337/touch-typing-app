@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dd9e5b0-9cc6-4e10-b2ad-125ba56edea0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavBarComponent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBarComponent/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBarComponent/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBarComponent/style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -46,6 +52,10 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\WarBr1nger\WebstormProjects\touch-typing-app\src\components\SimpleChooseComponent" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\WarBr1nger\WebstormProjects\touch-typing-app\src\components\NavBarComponent\static" />
+      <recent name="C:\Users\WarBr1nger\WebstormProjects\touch-typing-app\src\components\AboutComponent\static" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -56,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1646100922367</updated>
       <workItem from="1646100925676" duration="30471000" />
-      <workItem from="1646424081618" duration="11161000" />
+      <workItem from="1646424081618" duration="34081000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Create-react-app">
       <created>1646113402388</created>
@@ -100,7 +110,21 @@
       <option name="project" value="LOCAL" />
       <updated>1646450574166</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Reworked Logo">
+      <created>1646450703735</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1646450703735</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fixed Logo">
+      <created>1646450869269</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1646450869269</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +137,8 @@
     <MESSAGE value="Base Implementation of SimpleRunningLine" />
     <MESSAGE value="Removed MUI, added Aphrodite.js" />
     <MESSAGE value="Added NavBar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added NavBar" />
+    <MESSAGE value="Reworked Logo" />
+    <MESSAGE value="Fixed Logo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Logo" />
   </component>
 </project>

@@ -3,26 +3,31 @@ import './App.css'
 import { css } from 'aphrodite'
 import { SimpleChooseComponent } from "./components/SimpleChooseComponent";
 import { NavBarComponent} from "./components/NavBarComponent";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { style } from "./style";
+import { AboutComponent } from "./components/AboutComponent";
+import { RecoilRoot } from 'recoil';
 
 //'rgba(0, 0, 0, 0.04)',
 function App() {
   return (
+      <RecoilRoot>
+          <BrowserRouter>
+              <div className={css(style('a').Main)}>
+                  <NavBarComponent />
+                  <div className={css(style('a').Container)}>
+                          <Routes>
+                              <Route path="/" element={<Navigate to="about" />}/>
+                              <Route path="/about" element={<AboutComponent/>}/>
+                              <Route path="/simple" element={<SimpleChooseComponent />}/>
+                              <Route path="/complex" />
+                              <Route path="/board" />
+                          </Routes>
 
-      <div className={css(style('a').main)}>
-          <Router>
-              <NavBarComponent />
-              <Routes>
-                  <Route path="/" />
-                  <Route path="/about"  />
-                  <Route path="/contact" />
-                  <Route path="/signin" />
-                  <Route path="/sign-up" />
-              </Routes>
-          </Router>
-        <SimpleChooseComponent />
-      </div>
+                  </div>
+              </div>
+          </BrowserRouter>
+      </RecoilRoot>
   );
 }
 
