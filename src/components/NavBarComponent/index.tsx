@@ -36,9 +36,9 @@ export const NavBarComponent = () => {
                     Sign Up
                 </NavLink>
             </div>
-            <NavLink className={css(style('').Logo)} to="https://github.com/IlyaAlexandrov1337">
+            <a className={css(style('').Logo)} href="https://github.com/IlyaAlexandrov1337" target='_blank'>
                 GitHub
-            </NavLink>
+            </a>
             <FaBars className={css(style('').Bars)}/>
         </div>
     );
