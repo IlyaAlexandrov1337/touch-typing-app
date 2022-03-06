@@ -1,16 +1,19 @@
 import React, { useState } from 'react';
 import { css } from 'aphrodite';
-import { useRecoilValue } from 'recoil';
+import { useRecoilState, useRecoilValue } from 'recoil';
 import { useBeforeUnload } from 'react-use';
 import { useKeyPress } from '../../hooks/useKeyPress';
 import { generate } from '../../utils/words';
 import { currentTime } from '../../utils/time';
 import { style } from './style';
 import { themeLabelState } from '../../state/selectors';
+import { simpleResultState } from '../../state/atoms';
+import { SimpleChooseComponent } from '../SimpleChooseComponent';
 
 export function SimpleRunningLineComponent({ count } : { count: number }) {
-  // useBeforeUnload(true, 'You have unsaved changes, are you sure?');
   const themeLabel = useRecoilValue(themeLabelState);
+  const [result, setResult] = useRecoilState(simpleResultState);
+
   const initialWords = generate(count);
   const [leftPadding, setLeftPadding] = useState(
     new Array(20).fill(' ').join(''),
@@ -25,6 +28,8 @@ export function SimpleRunningLineComponent({ count } : { count: number }) {
 
   const [accuracy, setAccuracy] = useState('');
   const [typedChars, setTypedChars] = useState('');
+
+  useBeforeUnload(Boolean(startTime), 'You have unsaved changes, are you sure?');
 
   useKeyPress((key) => {
     if (!startTime) {
@@ -42,7 +47,13 @@ export function SimpleRunningLineComponent({ count } : { count: number }) {
       setCurrentChar(incomingChars.charAt(0));
 
       if (incomingChars.length === 0) {
-        console.log('ABA');
+        setResult({
+          ...result,
+          [count]: {
+            WPM: wpm,
+            ACC: accuracy,
+          },
+        });
       }
       setIncomingChars(incomingChars.substring(1));
 
@@ -61,6 +72,8 @@ export function SimpleRunningLineComponent({ count } : { count: number }) {
       ),
     );
   });
+
+  if (incomingChars.length === 0 && currentChar === '') return <SimpleChooseComponent />;
 
   return (
     <div className={css(style(themeLabel).Text)}>

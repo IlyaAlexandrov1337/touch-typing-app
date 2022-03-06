@@ -16,7 +16,6 @@ export function NavBarComponent() {
   const [theme, setTheme] = useRecoilState(themeState);
   const themeLabel = useRecoilValue(themeLabelState);
   const handleTheme = () => setTheme(!theme);
-
   return (
     <div className={css(style(themeLabel).Main)}>
       <div className={css(style(themeLabel).Menu)}>
@@ -59,7 +58,7 @@ export function NavBarComponent() {
       />
       <a className={css(style(themeLabel).Logo)} href="https://github.com/IlyaAlexandrov1337" target="_blank" rel="noreferrer">
         <img
-          style={{ maxWidth: '54px', minWidth: '50px', marginTop: '25px' }}
+          style={{ maxWidth: '54px', minWidth: '50px', marginTop: '5px' }}
           src={themeLabel === 'dark' ? githubBlack : githubWhite}
           alt="GitHub"
         />
