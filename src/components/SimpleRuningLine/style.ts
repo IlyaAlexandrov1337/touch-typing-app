@@ -1,16 +1,16 @@
 import { StyleSheet } from 'aphrodite';
 
 export const style = (theme: string) => StyleSheet.create({
-    Text: {
-        whiteSpace: 'pre',
-        color: 'white',
-    },
+  Text: {
+    whiteSpace: 'pre',
+    color: theme === 'dark' ? 'white' : 'black',
+  },
 
-    CharacterCurrent: {
-        backgroundColor: theme === 'black' ? '#09d3ac' : 'rgba(0, 0, 0, 0.04)'
-    },
+  CharacterCurrent: {
+    backgroundColor: theme === 'dark' ? '#09d3ac' : '#e6802c',
+  },
 
-    CharacterOut: {
-        color: theme === 'black' ? 'lightgray' : 'gray'
-    }
-})
+  CharacterOut: {
+    color: theme === 'dark' ? 'lightgray' : 'gray',
+  },
+});

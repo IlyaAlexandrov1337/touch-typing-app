@@ -1,33 +1,29 @@
 import React from 'react';
-import './App.css'
-import { css } from 'aphrodite'
-import { SimpleChooseComponent } from "./components/SimpleChooseComponent";
-import { NavBarComponent} from "./components/NavBarComponent";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { style } from "./style";
-import { AboutComponent } from "./components/AboutComponent";
-import { RecoilRoot } from 'recoil';
+import './App.css';
+import { css } from 'aphrodite';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import { useRecoilValue } from 'recoil';
+import { SimpleChooseComponent } from './components/SimpleChooseComponent';
+import { NavBarComponent } from './components/NavBarComponent';
+import { style } from './style';
+import { AboutComponent } from './components/AboutComponent';
+import { themeLabelState } from './state/selectors';
 
-//'rgba(0, 0, 0, 0.04)',
 function App() {
+  const themeLabel = useRecoilValue(themeLabelState);
   return (
-      <RecoilRoot>
-          <BrowserRouter>
-              <div className={css(style('a').Main)}>
-                  <NavBarComponent />
-                  <div className={css(style('a').Container)}>
-                          <Routes>
-                              <Route path="/" element={<Navigate to="about" />}/>
-                              <Route path="/about" element={<AboutComponent/>}/>
-                              <Route path="/simple" element={<SimpleChooseComponent />}/>
-                              <Route path="/complex" />
-                              <Route path="/board" />
-                          </Routes>
-
-                  </div>
-              </div>
-          </BrowserRouter>
-      </RecoilRoot>
+    <div className={css(style(themeLabel).Main)}>
+      <NavBarComponent />
+      <div className={css(style(themeLabel).Container)}>
+        <Routes>
+          <Route path="/" element={<Navigate to="about" />} />
+          <Route path="/about" element={<AboutComponent />} />
+          <Route path="/simple" element={<SimpleChooseComponent />} />
+          <Route path="/complex" />
+          <Route path="/board" />
+        </Routes>
+      </div>
+    </div>
   );
 }
 
