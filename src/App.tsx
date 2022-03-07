@@ -8,6 +8,7 @@ import { NavBarComponent } from './components/NavBarComponent';
 import { style } from './style';
 import { AboutComponent } from './components/AboutComponent';
 import { themeLabelState } from './state/selectors';
+import { BoardComponent } from './components/BoardComponent';
 
 function App() {
   const themeLabel = useRecoilValue(themeLabelState);
@@ -20,7 +21,7 @@ function App() {
           <Route path="/about" element={<AboutComponent />} />
           <Route path="/simple" element={<SimpleChooseComponent />} />
           <Route path="/complex" />
-          <Route path="/board" />
+          <Route path="/board" element={<BoardComponent />} />
         </Routes>
       </div>
     </div>

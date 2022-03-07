@@ -33,6 +33,13 @@ export function NavBarComponent() {
         >
           Simple
         </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive
+            ? css(style(themeLabel).ButtonLink) : css(style(themeLabel).Link))}
+          to="/board"
+        >
+          Board
+        </NavLink>
       </div>
       <ToggleButton
         inactiveLabel={<BsFillMoonStarsFill color="#ffd700" size={15} />}

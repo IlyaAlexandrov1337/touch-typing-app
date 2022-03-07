@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="5dd9e5b0-9cc6-4e10-b2ad-125ba56edea0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BoardComponent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BoardComponent/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavBarComponent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBarComponent/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBarComponent/static/github_black.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBarComponent/static/github_black.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SimpleRuningLine/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SimpleRuningLine/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +68,7 @@
       <updated>1646100922367</updated>
       <workItem from="1646100925676" duration="30471000" />
       <workItem from="1646424081618" duration="46605000" />
-      <workItem from="1646588785091" duration="6516000" />
+      <workItem from="1646588785091" duration="16466000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Create-react-app">
       <created>1646113402388</created>
@@ -152,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646532036610</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added theme changer, added Result State">
+      <created>1646603871162</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1646603871163</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +180,7 @@
     <MESSAGE value="Added AboutComponent" />
     <MESSAGE value="Added SimpleChooseComponent" />
     <MESSAGE value="Lintered, added Recoil Theme State" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lintered, added Recoil Theme State" />
+    <MESSAGE value="Added theme changer, added Result State" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added theme changer, added Result State" />
   </component>
 </project>
