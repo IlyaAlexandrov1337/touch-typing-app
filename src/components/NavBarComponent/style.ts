@@ -19,6 +19,10 @@ export const style = (theme: string) => StyleSheet.create({
     color: theme === 'dark' ? 'black' : 'white',
     fontSize: '2rem',
     textDecoration: 'none',
+    mozUserSelect: 'none',
+    khtmlUserSelect: 'none',
+    webkitUserSelect: 'none',
+    userSelect: 'none',
   },
 
   Link: {

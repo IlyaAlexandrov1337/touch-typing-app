@@ -6,11 +6,12 @@ import { css } from 'aphrodite-to-jss';
 // @ts-ignore
 import ToggleButton from 'react-toggle-button';
 import { useRecoilState, useRecoilValue } from 'recoil';
-import { style } from './style';
+
 import { themeState } from '../../state/atoms';
 import { themeLabelState } from '../../state/selectors';
 import githubBlack from './static/github_black.png';
 import githubWhite from './static/github_white.png';
+import { style } from './style';
 
 export function NavBarComponent() {
   const [theme, setTheme] = useRecoilState(themeState);

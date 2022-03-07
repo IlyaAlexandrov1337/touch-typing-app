@@ -13,9 +13,11 @@ export const style = (theme: string) => StyleSheet.create({
     border: theme === 'dark' ? '2px solid white' : '2px solid black',
     width: '800px',
     height: '200px',
-  },
-
-  Th: {
-    borderBottom: theme === 'dark' ? '1px solid white' : '1px solid black',
+    '& th': {
+      borderBottom: theme === 'dark' ? '1px solid white' : '1px solid black',
+    },
+    '& td': {
+      textAlign: 'center',
+    },
   },
 });

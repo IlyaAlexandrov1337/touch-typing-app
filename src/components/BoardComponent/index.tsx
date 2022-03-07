@@ -11,32 +11,38 @@ export function BoardComponent() {
   return (
     <div className={css(style(themeLabel).Main)}>
       <table className={css(style(themeLabel).Table)}>
-        <tr>
-          <th className={css(style(themeLabel).Th)}>Count of words</th>
-          <th className={css(style(themeLabel).Th)}>Best WPM</th>
-          <th className={css(style(themeLabel).Th)}>Best ACC</th>
-          <th className={css(style(themeLabel).Th)}>Last WPM</th>
-          <th className={css(style(themeLabel).Th)}>Last ACC</th>
-        </tr>
-        {Object.keys(simpleResult).map((val) => (
-          <tr key={val}>
-            <td style={{ textAlign: 'center' }}>
-              {val}
-            </td>
-            <td style={{ textAlign: 'center' }}>
-              {simpleResult[val as unknown as keyof typeof simpleResult].WPM}
-            </td>
-            <td style={{ textAlign: 'center' }}>
-              {simpleResult[val as unknown as keyof typeof simpleResult].ACC}
-            </td>
-            <td style={{ textAlign: 'center' }}>
-              {simpleResult[val as unknown as keyof typeof simpleResult].WPM}
-            </td>
-            <td style={{ textAlign: 'center' }}>
-              {simpleResult[val as unknown as keyof typeof simpleResult].ACC}
-            </td>
+        <thead>
+          <tr>
+            <th>Count of words</th>
+            <th>Best WPM</th>
+            <th>Best ACC</th>
+            <th>Last WPM</th>
+            <th>Last ACC</th>
           </tr>
-        ))}
+        </thead>
+        <tbody>
+          {Object.keys(simpleResult).map((val) => (
+
+            <tr key={val}>
+              <td>
+                {val}
+              </td>
+              <td>
+                {simpleResult[val as unknown as keyof typeof simpleResult].WPM || '-'}
+              </td>
+              <td>
+                {simpleResult[val as unknown as keyof typeof simpleResult].ACC || '-'}
+              </td>
+              <td>
+                {simpleResult[val as unknown as keyof typeof simpleResult].WPM || '-'}
+              </td>
+              <td>
+                {simpleResult[val as unknown as keyof typeof simpleResult].ACC || '-'}
+              </td>
+            </tr>
+
+          ))}
+        </tbody>
       </table>
     </div>
   );
