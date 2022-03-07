@@ -42,35 +42,37 @@ export function NavBarComponent() {
           Board
         </NavLink>
       </div>
-      <ToggleButton
-        inactiveLabel={<BsFillMoonStarsFill color="#ffd700" size={15} />}
-        activeLabel={<BsFillSunFill color="white" size={15} />}
-        colors={{
-          activeThumb: {
-            base: '#f0f0f4',
-          },
-          inactiveThumb: {
-            base: '#09d3ac',
-          },
-          active: {
-            base: '#e6802c',
-            hover: '#ec4d4d',
-          },
-          inactive: {
-            base: '#282c34',
-            hover: '#58379c',
-          },
-        }}
-        value={theme}
-        onToggle={handleTheme}
-      />
-      <a className={css(style(themeLabel).Logo)} href="https://github.com/IlyaAlexandrov1337" target="_blank" rel="noreferrer">
-        <img
-          style={{ maxWidth: '54px', minWidth: '50px', marginTop: '5px' }}
-          src={themeLabel === 'dark' ? githubBlack : githubWhite}
-          alt="GitHub"
+      <div className={css(style(themeLabel).Right)}>
+        <ToggleButton
+          inactiveLabel={<BsFillMoonStarsFill color="#ffd700" size={15} />}
+          activeLabel={<BsFillSunFill color="white" size={15} />}
+          colors={{
+            activeThumb: {
+              base: '#f0f0f4',
+            },
+            inactiveThumb: {
+              base: '#09d3ac',
+            },
+            active: {
+              base: '#e6802c',
+              hover: '#ec4d4d',
+            },
+            inactive: {
+              base: '#282c34',
+              hover: '#58379c',
+            },
+          }}
+          value={theme}
+          onToggle={handleTheme}
         />
-      </a>
+        <a className={css(style(themeLabel).Logo)} href="https://github.com/IlyaAlexandrov1337" target="_blank" rel="noreferrer">
+          <img
+            style={{ maxWidth: '54px', minWidth: '50px', marginTop: '5px' }}
+            src={themeLabel === 'dark' ? githubBlack : githubWhite}
+            alt="GitHub"
+          />
+        </a>
+      </div>
       <FaBars className={css(style(themeLabel).Bars)} />
 
     </div>

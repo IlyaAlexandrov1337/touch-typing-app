@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5dd9e5b0-9cc6-4e10-b2ad-125ba56edea0" name="Changes" comment="Added style of BoardComponent">
+    <list default="true" id="5dd9e5b0-9cc6-4e10-b2ad-125ba56edea0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BoardComponent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BoardComponent/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BoardComponent/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BoardComponent/style.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavBarComponent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBarComponent/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavBarComponent/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBarComponent/style.ts" afterDir="false" />
     </list>
@@ -67,7 +66,7 @@
       <updated>1646100922367</updated>
       <workItem from="1646100925676" duration="30471000" />
       <workItem from="1646424081618" duration="46605000" />
-      <workItem from="1646588785091" duration="24883000" />
+      <workItem from="1646588785091" duration="26291000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Create-react-app">
       <created>1646113402388</created>
@@ -181,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646618513928</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Fixed BoardComponent">
+      <created>1646688495176</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1646688495177</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +210,7 @@
     <MESSAGE value="Commit before try to change aphrodite to aphrodite-to-jss" />
     <MESSAGE value="Aphrodite replaced with aphrodite-to-jss" />
     <MESSAGE value="Added style of BoardComponent" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added style of BoardComponent" />
+    <MESSAGE value="Fixed BoardComponent" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed BoardComponent" />
   </component>
 </project>

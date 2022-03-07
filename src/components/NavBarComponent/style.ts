@@ -59,6 +59,13 @@ export const style = (theme: string) => StyleSheet.create({
     },
   },
 
+  Right: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+
   Button: {
     display: 'flex',
     alignItems: 'center',

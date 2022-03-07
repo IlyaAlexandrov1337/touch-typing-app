@@ -22,7 +22,6 @@ export function BoardComponent() {
         </thead>
         <tbody>
           {Object.keys(simpleResult).map((val) => (
-
             <tr key={val}>
               <td>
                 {val}
