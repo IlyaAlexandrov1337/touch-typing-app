@@ -1,5 +1,5 @@
 import React from 'react';
-import { css } from 'aphrodite';
+import { css } from 'aphrodite-to-jss';
 import { useRecoilValue } from 'recoil';
 import { style } from './style';
 import pos from './static/pos.png';

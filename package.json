@@ -13,7 +13,6 @@
     "@types/node": "^16.11.26",
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
-    "aphrodite": "^2.4.0",
     "aphrodite-to-jss": "^1.1.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

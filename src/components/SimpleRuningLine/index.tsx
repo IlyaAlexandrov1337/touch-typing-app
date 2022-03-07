@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { css } from 'aphrodite';
+import { css } from 'aphrodite-to-jss';
 import { useRecoilState, useRecoilValue } from 'recoil';
 import { useBeforeUnload } from 'react-use';
 import { useKeyPress } from '../../hooks/useKeyPress';

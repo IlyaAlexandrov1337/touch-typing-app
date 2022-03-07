@@ -1,4 +1,4 @@
-import { StyleSheet } from 'aphrodite';
+import { StyleSheet } from 'aphrodite-to-jss';
 
 export const style = (theme: string) => StyleSheet.create({
   Text: {

@@ -3,10 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="5dd9e5b0-9cc6-4e10-b2ad-125ba56edea0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutComponent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutComponent/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutComponent/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutComponent/style.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BoardComponent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BoardComponent/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/NavBarComponent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBarComponent/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBarComponent/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBarComponent/style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SimpleChooseComponent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SimpleChooseComponent/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SimpleChooseComponent/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SimpleChooseComponent/style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SimpleRuningLine/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SimpleRuningLine/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SimpleRuningLine/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SimpleRuningLine/style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +77,7 @@
       <updated>1646100922367</updated>
       <workItem from="1646100925676" duration="30471000" />
       <workItem from="1646424081618" duration="46605000" />
-      <workItem from="1646588785091" duration="16466000" />
+      <workItem from="1646588785091" duration="17632000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Create-react-app">
       <created>1646113402388</created>
@@ -161,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646603871163</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Commit before try to change aphrodite to aphrodite-to-jss">
+      <created>1646617524004</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1646617524004</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +197,7 @@
     <MESSAGE value="Added SimpleChooseComponent" />
     <MESSAGE value="Lintered, added Recoil Theme State" />
     <MESSAGE value="Added theme changer, added Result State" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added theme changer, added Result State" />
+    <MESSAGE value="Commit before try to change aphrodite to aphrodite-to-jss" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit before try to change aphrodite to aphrodite-to-jss" />
   </component>
 </project>

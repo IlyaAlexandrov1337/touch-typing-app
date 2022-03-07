@@ -1,8 +1,8 @@
-import { StyleSheet } from 'aphrodite';
+import { StyleSheet } from 'aphrodite-to-jss';
 
 export const style = (theme: string) => StyleSheet.create({
   Main: {
-    '::selection > div': {
+    '& ::selection': {
       color: theme === 'dark' ? 'black' : 'white',
       background: theme === 'dark' ? '#09d3ac' : '#e6802c',
     },

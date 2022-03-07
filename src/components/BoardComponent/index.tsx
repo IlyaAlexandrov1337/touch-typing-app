@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRecoilValue } from 'recoil';
-import { css } from 'aphrodite';
+import { css } from 'aphrodite-to-jss';
 import { simpleResultLabelState, themeLabelState } from '../../state/selectors';
 import { style } from './style';
 
@@ -18,8 +18,8 @@ export function BoardComponent() {
           <th className={css(style(themeLabel).Th)}>Last WPM</th>
           <th className={css(style(themeLabel).Th)}>Last ACC</th>
         </tr>
-        {Object.keys(simpleResult).map((val, key) => (
-          <tr key={key}>
+        {Object.keys(simpleResult).map((val) => (
+          <tr key={val}>
             <td style={{ textAlign: 'center' }}>
               {val}
             </td>

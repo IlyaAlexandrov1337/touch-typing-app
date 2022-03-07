@@ -1,5 +1,5 @@
 import React, { useState, ChangeEvent } from 'react';
-import { css } from 'aphrodite';
+import { css } from 'aphrodite-to-jss';
 import { useRecoilValue } from 'recoil';
 import { SimpleRunningLineComponent } from '../SimpleRuningLine';
 import { style } from './style';
