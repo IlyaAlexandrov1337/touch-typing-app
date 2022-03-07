@@ -1,11 +1,10 @@
 import React from 'react';
 import { useRecoilValue } from 'recoil';
 import { css } from 'aphrodite-to-jss';
-import { simpleResultLabelState, themeLabelState } from '../../state/selectors';
+import { themeLabelState } from '../../state/selectors';
 import { style } from './style';
 
 export function BoardComponent() {
-  const simpleResult = useRecoilValue(simpleResultLabelState);
   const themeLabel = useRecoilValue(themeLabelState);
 
   return (
@@ -21,26 +20,32 @@ export function BoardComponent() {
           </tr>
         </thead>
         <tbody>
-          {Object.keys(simpleResult).map((val) => (
-            <tr key={val}>
-              <td>
-                {val}
-              </td>
-              <td>
-                {simpleResult[val as unknown as keyof typeof simpleResult].WPM || '-'}
-              </td>
-              <td>
-                {simpleResult[val as unknown as keyof typeof simpleResult].ACC || '-'}
-              </td>
-              <td>
-                {simpleResult[val as unknown as keyof typeof simpleResult].WPM || '-'}
-              </td>
-              <td>
-                {simpleResult[val as unknown as keyof typeof simpleResult].ACC || '-'}
-              </td>
-            </tr>
+          {[2, 10, 30, 50, 100].map((val) => {
+            const best = localStorage.getItem(`${val}-best`)
+              ? JSON.parse(localStorage.getItem(`${val}-best`) || '') : null;
+            const last = localStorage.getItem(`${val}-last`)
+              ? JSON.parse(localStorage.getItem(`${val}-last`) || '') : null;
+            return (
+              <tr key={val}>
+                <td>
+                  {val}
+                </td>
+                <td>
+                  {best ? best.WPM : '-'}
+                </td>
+                <td>
+                  {best ? best.ACC : '-'}
+                </td>
+                <td>
+                  {last ? last.WPM : '-'}
+                </td>
+                <td>
+                  {last ? last.ACC : '-'}
+                </td>
+              </tr>
 
-          ))}
+            );
+          })}
         </tbody>
       </table>
     </div>

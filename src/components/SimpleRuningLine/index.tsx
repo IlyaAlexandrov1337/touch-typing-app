@@ -1,18 +1,16 @@
 import React, { useState } from 'react';
 import { css } from 'aphrodite-to-jss';
-import { useRecoilState, useRecoilValue } from 'recoil';
+import { useRecoilValue } from 'recoil';
 import { useBeforeUnload } from 'react-use';
 import { useKeyPress } from '../../hooks/useKeyPress';
 import { generate } from '../../utils/words';
 import { currentTime } from '../../utils/time';
 import { style } from './style';
 import { themeLabelState } from '../../state/selectors';
-import { simpleResultState } from '../../state/atoms';
 import { SimpleChooseComponent } from '../SimpleChooseComponent';
 
 export function SimpleRunningLineComponent({ count } : { count: number }) {
   const themeLabel = useRecoilValue(themeLabelState);
-  const [result, setResult] = useRecoilState(simpleResultState);
 
   const initialWords = generate(count);
   const [leftPadding, setLeftPadding] = useState(
@@ -47,14 +45,18 @@ export function SimpleRunningLineComponent({ count } : { count: number }) {
       setCurrentChar(incomingChars.charAt(0));
 
       if (incomingChars.length === 0) {
-        setResult({
-          ...result,
-          [count]: {
-            WPM: wpm,
-            ACC: accuracy,
-          },
-        });
+        localStorage.setItem(`${count}-last`, JSON.stringify({
+          WPM: wpm,
+          ACC: accuracy,
+        }));
+        if (localStorage.getItem(`${count}-best`)) {
+          const best = JSON.parse(localStorage.getItem(`${count}-best`) || '');
+          const last = JSON.parse(localStorage.getItem(`${count}-last`) || '');
+          if (best.WPM > last.WPM) best.WPM = last.WPM;
+          if (best.ACC > last.ACC) best.ACC = last.ACC;
+        } else localStorage.setItem(`${count}-best`, localStorage.getItem(`${count}-last`) || '');
       }
+
       setIncomingChars(incomingChars.substring(1));
 
       if (incomingChars.charAt(0) === ' ') {
