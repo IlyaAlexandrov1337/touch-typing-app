@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaBars } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs';
 import { css } from 'aphrodite-to-jss';
@@ -73,7 +72,6 @@ export function NavBarComponent() {
           />
         </a>
       </div>
-      <FaBars className={css(style(themeLabel).Bars)} />
 
     </div>
   );

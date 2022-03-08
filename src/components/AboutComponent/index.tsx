@@ -51,13 +51,13 @@ export function AboutComponent() {
             чтобы не перенапрягать кисти.
           </li>
         </ul>
-        <img className={css(style(themeLabel).Picture)} src={pos} alt="pos" />
+        <img className={css(style(themeLabel).PictureShort)} src={pos} alt="pos" />
       </div>
       <hr className={css(style(themeLabel).Line)} />
       <div className={css(style(themeLabel).Row)}>
         <span style={{ fontSize: '1.3rem' }}>Исходная позиция</span>
         <div className={css(style(themeLabel).Column)}>
-          <img className={css(style(themeLabel).Picture)} src={hand} alt="hands" />
+          <img className={css(style(themeLabel).PictureLong)} src={hand} alt="hands" />
           <p>
             Немного согни пальцы и положи их на клавиши
             ФЫВА и ОЛДЖ, которые находятся в среднем ряду. Эта строка называется ОСНОВНОЙ СТРОКОЙ,
@@ -74,7 +74,7 @@ export function AboutComponent() {
       <div className={css(style(themeLabel).Row)}>
         <span style={{ fontSize: '1.3rem' }}>Схема клавиатуры</span>
         <div className={css(style(themeLabel).Column)}>
-          <img className={css(style(themeLabel).Picture)} src={keyboard} alt="keyboard" />
+          <img className={css(style(themeLabel).PictureLong)} src={keyboard} alt="keyboard" />
           <p>
             Цвет клавиш на этой клавиатуре поможет тебе понять и запомнить,
             каким пальцем на какую клавишу нужно нажимать.
@@ -116,7 +116,7 @@ export function AboutComponent() {
             так как они часто остаются незадействованными.
           </p>
         </div>
-        <img className={css(style(themeLabel).Picture)} src={man} alt="man" />
+        <img className={css(style(themeLabel).PictureShort)} src={man} alt="man" />
       </div>
       <hr className={css(style(themeLabel).Line)} />
       <div className={css(style(themeLabel).Row)}>

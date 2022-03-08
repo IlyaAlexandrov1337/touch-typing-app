@@ -36,27 +36,10 @@ export const style = (theme: string) => StyleSheet.create({
     cursor: 'pointer',
   },
 
-  Bars: {
-    display: 'none',
-    color: 'black',
-    '@media screen and (max-width: 768px)': {
-      display: 'block',
-      position: 'absolute',
-      top: 0,
-      right: 0,
-      transform: 'translate(-100%, 75%)',
-      fontSize: '1.8rem',
-      cursor: 'pointer',
-    },
-  },
-
   Menu: {
     display: 'flex',
     alignItems: 'center',
     marginRight: '-24px',
-    '@media screen and (max-width: 768px)': {
-      display: 'none',
-    },
   },
 
   Right: {

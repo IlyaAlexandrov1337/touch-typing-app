@@ -6,6 +6,7 @@ export const style = (theme: string) => StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'flex-end',
     alignItems: 'center',
+    maxWidth: '100%',
   },
 
   Line: {
@@ -15,6 +16,8 @@ export const style = (theme: string) => StyleSheet.create({
 
   Row: {
     display: 'flex',
+    flexShrink: 1,
+
     flexBasis: '42vh',
     flexDirection: 'row',
     justifyContent: 'space-around',
@@ -34,8 +37,16 @@ export const style = (theme: string) => StyleSheet.create({
     alignItems: 'center',
   },
 
-  Picture: {
+  PictureShort: {
+    maxHeight: '250px',
+    minWidth: '120px',
+    marginLeft: '2%',
+    width: '100%',
+  },
+
+  PictureLong: {
     maxHeight: '250px',
     maxWidth: '750px',
+    width: '100%',
   },
 });
