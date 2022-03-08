@@ -4,6 +4,7 @@ export const style = (theme: string) => StyleSheet.create({
   Main: {
     display: 'flex',
     height: '100%',
+    width: '100%',
     flexDirection: 'column',
     justifyContent: 'flex-end',
     alignItems: 'center',
@@ -22,9 +23,9 @@ export const style = (theme: string) => StyleSheet.create({
     backgroundColor: theme === 'dark' ? '#f0f0f4' : '#282c34',
     color: theme === 'dark' ? 'black' : 'white',
     fontSize: '20px',
-    padding: '10px 60px',
+    padding: '4% 7%',
     borderRadius: '5px',
-    margin: '10px 0px',
+    margin: '2% 0%',
     cursor: 'pointer',
   },
 });

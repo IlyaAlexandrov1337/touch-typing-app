@@ -38,10 +38,9 @@ export const style = (theme: string) => StyleSheet.create({
   },
 
   PictureShort: {
-    maxHeight: '250px',
-    minWidth: '120px',
-    marginLeft: '2%',
-    width: '100%',
+    maxHeight: '400px',
+    marginLeft: '1%',
+    height: '50vh',
   },
 
   PictureLong: {

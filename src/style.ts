@@ -21,7 +21,7 @@ export const style = (theme: string) => StyleSheet.create({
 
   Container: {
     maxWidth: '1000px',
-    flexShrink: 1,
+    flexGrow: 1,
     alignItems: 'center',
     paddingLeft: '4vh',
     paddingRight: '4vh',

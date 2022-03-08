@@ -3,27 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5dd9e5b0-9cc6-4e10-b2ad-125ba56edea0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutComponent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutComponent/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AboutComponent/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutComponent/style.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BoardComponent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BoardComponent/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BoardComponent/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BoardComponent/style.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBarComponent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBarComponent/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBarComponent/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBarComponent/style.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SimpleChooseComponent/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SimpleChooseComponent/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SimpleChooseComponent/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SimpleChooseComponent/style.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SimpleRuningLine/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SimpleRuningLine/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SimpleRuningLine/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SimpleRuningLine/style.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useKeyPress.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useKeyPress.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/react-app-env.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reportWebVitals.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/atoms.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/atoms.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/selectors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/selectors.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/time.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/time.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/words.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/words.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +69,7 @@
       <workItem from="1646424081618" duration="46605000" />
       <workItem from="1646588785091" duration="31437000" />
       <workItem from="1646720525564" duration="1238000" />
-      <workItem from="1646724717623" duration="1717000" />
+      <workItem from="1646724717623" duration="2976000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Create-react-app">
       <created>1646113402388</created>
@@ -221,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646696474688</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Fixed linter and added responsive style#1">
+      <created>1646726586638</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1646726586638</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +237,7 @@
     <MESSAGE value="Fixed BoardComponent" />
     <MESSAGE value="Fixed theme switcher position" />
     <MESSAGE value="Replaced RecoilSimpleState with LocalStorage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Replaced RecoilSimpleState with LocalStorage" />
+    <MESSAGE value="Fixed linter and added responsive style#1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed linter and added responsive style#1" />
   </component>
 </project>

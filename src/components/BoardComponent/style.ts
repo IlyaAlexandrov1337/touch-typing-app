@@ -11,12 +11,13 @@ export const style = (theme: string) => StyleSheet.create({
 
   Table: {
     border: theme === 'dark' ? '2px solid white' : '2px solid black',
-    width: '800px',
-    height: '200px',
+
     '& th': {
+      padding: '1% 2%',
       borderBottom: theme === 'dark' ? '1px solid white' : '1px solid black',
     },
     '& td': {
+      padding: '1% 2%',
       textAlign: 'center',
     },
   },
