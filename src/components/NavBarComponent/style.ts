@@ -31,7 +31,7 @@ export const style = (theme: string) => StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     textDecoration: 'none',
-    padding: '0 1rem',
+    padding: '0 0.8rem',
     height: '100%',
     cursor: 'pointer',
   },
@@ -47,15 +47,7 @@ export const style = (theme: string) => StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-  },
-
-  Button: {
-    display: 'flex',
-    alignItems: 'center',
-    marginRight: '24px',
-    '@media screen and (max-width: 768px)': {
-      display: 'none',
-    },
+    marginLeft: '24px',
   },
 
   ButtonLink: {
@@ -68,6 +60,6 @@ export const style = (theme: string) => StyleSheet.create({
     border: theme === 'dark' ? '2px solid black' : '2px solid white',
     cursor: 'pointer',
     textDecoration: 'none',
-    marginLeft: '12px',
+    margin: '0px 4px',
   },
 });
