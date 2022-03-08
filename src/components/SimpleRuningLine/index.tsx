@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { css } from 'aphrodite-to-jss';
 import { useRecoilValue } from 'recoil';
-import { useBeforeUnload } from 'react-use';
 import { useKeyPress } from '../../hooks/useKeyPress';
 import { generate } from '../../utils/words';
 import { currentTime } from '../../utils/time';
@@ -26,8 +25,6 @@ export function SimpleRunningLineComponent({ count } : { count: number }) {
 
   const [accuracy, setAccuracy] = useState('');
   const [typedChars, setTypedChars] = useState('');
-
-  useBeforeUnload(Boolean(startTime), 'You have unsaved changes, are you sure?');
 
   useKeyPress((key) => {
     if (!startTime) {
@@ -75,7 +72,7 @@ export function SimpleRunningLineComponent({ count } : { count: number }) {
     );
   });
 
-  if (incomingChars.length === 0 && currentChar === '') return <SimpleChooseComponent />;
+  if (incomingChars.length === 0 && currentChar === '') return <SimpleChooseComponent isTried />;
 
   return (
     <div className={css(style(themeLabel).Text)}>

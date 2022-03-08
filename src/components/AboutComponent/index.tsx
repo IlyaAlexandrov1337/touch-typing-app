@@ -14,6 +14,31 @@ export function AboutComponent() {
   return (
     <div className={css(style(themeLabel).Main)}>
       <div className={css(style(themeLabel).Row)}>
+        <span style={{ fontSize: '1.3rem' }}>Описание проекта</span>
+        <div className={css(style(themeLabel).Column)}>
+          <p>
+            Это моя первая робкая попытка реализовать тренажёр слепой печати.
+            Есть очень много того, что я хотел бы сделать, но чиго нет в этом приложении.
+          </p>
+          <p>
+            На данный момент Recoil здесь используются только для смены цветовой темы,
+            т.е. он лишь замена useContext.
+          </p>
+          <p>
+            Есть ещё довольно много вещей, которые я бы хотел сделать.
+            Ближайшие идеи для реализации:
+          </p>
+          <ul>
+            <li>
+              использовать вызовы к какому-нибудь API для ещё одного вида этого тренажёра
+              (пока что есть только прямая генерация слов через @faker-js/faker).
+            </li>
+            <li>добавить более сложные глобальные состояния.</li>
+          </ul>
+        </div>
+      </div>
+      <hr className={css(style(themeLabel).Line)} />
+      <div className={css(style(themeLabel).Row)}>
         <span style={{ fontSize: '1.3rem' }}>Поза при печати текста</span>
         <ul style={{ maxWidth: '60%' }}>
           <li>Сиди ровно и держи спину прямой.</li>

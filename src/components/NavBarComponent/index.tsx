@@ -30,9 +30,9 @@ export function NavBarComponent() {
         <NavLink
           className={({ isActive }) => (isActive
             ? css(style(themeLabel).ButtonLink) : css(style(themeLabel).Link))}
-          to="/simple"
+          to="/trainer"
         >
-          Simple
+          Trainer
         </NavLink>
         <NavLink
           className={({ isActive }) => (isActive

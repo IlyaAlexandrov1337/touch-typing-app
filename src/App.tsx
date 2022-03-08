@@ -17,9 +17,10 @@ function App() {
       <NavBarComponent />
       <div className={css(style(themeLabel).Container)}>
         <Routes>
+          <Route path="*" element={<h1> 404 </h1>} />
           <Route path="/" element={<Navigate to="about" />} />
           <Route path="/about" element={<AboutComponent />} />
-          <Route path="/simple" element={<SimpleChooseComponent />} />
+          <Route path="/trainer" element={<SimpleChooseComponent isTried={false} />} />
           <Route path="/complex" />
           <Route path="/board" element={<BoardComponent />} />
         </Routes>

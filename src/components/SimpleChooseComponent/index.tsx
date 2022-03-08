@@ -26,7 +26,7 @@ function Dropdown({ value, options, onChange }: DropdownProps) {
   );
 }
 
-export function SimpleChooseComponent() {
+export function SimpleChooseComponent({ isTried } : { isTried: boolean }) {
   const themeLabel = useRecoilValue(themeLabelState);
   const options = [
     { label: '2', value: '2' },
@@ -49,22 +49,30 @@ export function SimpleChooseComponent() {
 
   if (isSubmitted) {
     return (
-      <div className={css(style(themeLabel).Main)}>
+      <div className={css(style(themeLabel).Row)}>
         <SimpleRunningLineComponent count={Number(value)} />
       </div>
     );
   }
   return (
     <div className={css(style(themeLabel).Main)}>
-      <span>Выберите количество слов</span>
-      <Dropdown
-        options={options}
-        value={value}
-        onChange={handleChange}
-      />
-      <button type="button" className={css(style(themeLabel).Button)} onClick={handleSubmit}>
-        Начать
-      </button>
+      {isTried ? <h3>Хотите поробовать ещё раз?</h3> : (
+        <h3>
+          Помните: результат сохранится,
+          только если вы пропечатаете все слова до последнего символа!
+        </h3>
+      ) }
+      <div className={css(style(themeLabel).Row)}>
+        <span>Выберите количество слов</span>
+        <Dropdown
+          options={options}
+          value={value}
+          onChange={handleChange}
+        />
+        <button type="button" className={css(style(themeLabel).Button)} onClick={handleSubmit}>
+          Начать
+        </button>
+      </div>
     </div>
   );
 }

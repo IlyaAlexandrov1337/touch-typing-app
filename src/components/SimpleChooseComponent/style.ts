@@ -4,6 +4,14 @@ export const style = (theme: string) => StyleSheet.create({
   Main: {
     display: 'flex',
     height: '100%',
+    flexDirection: 'column',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+  },
+
+  Row: {
+    display: 'flex',
+    height: '100%',
     flexDirection: 'row',
     gap: '1.5vw',
     justifyContent: 'center',
