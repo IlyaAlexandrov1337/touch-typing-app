@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5dd9e5b0-9cc6-4e10-b2ad-125ba56edea0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBarComponent/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBarComponent/style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AboutComponent/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutComponent/style.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +66,7 @@
       <workItem from="1646424081618" duration="46605000" />
       <workItem from="1646588785091" duration="31437000" />
       <workItem from="1646720525564" duration="1238000" />
-      <workItem from="1646724717623" duration="3296000" />
+      <workItem from="1646724717623" duration="3538000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Create-react-app">
       <created>1646113402388</created>
@@ -215,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646727919587</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Fixed responsive style#3">
+      <created>1646728200442</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1646728200442</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +250,7 @@
     <MESSAGE value="Replaced RecoilSimpleState with LocalStorage" />
     <MESSAGE value="Fixed linter and added responsive style#1" />
     <MESSAGE value="Fixed responsive style#2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed responsive style#2" />
+    <MESSAGE value="Fixed responsive style#3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed responsive style#3" />
   </component>
 </project>

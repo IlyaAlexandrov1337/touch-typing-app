@@ -38,9 +38,9 @@ export const style = (theme: string) => StyleSheet.create({
   },
 
   PictureShort: {
-    maxHeight: '400px',
     marginLeft: '1%',
-    height: '50vh',
+    width: '35%',
+    aspectRation: '4/5',
   },
 
   PictureLong: {
