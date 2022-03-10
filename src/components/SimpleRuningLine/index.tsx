@@ -30,7 +30,7 @@ export function SimpleRunningLineComponent({ count } : { count: number }) {
 
   useEffect(() => {
     searchInput.current.focus();
-  }, [searchInput]);
+  }, []);
 
   useKeyPress((key) => {
     if (!startTime) {

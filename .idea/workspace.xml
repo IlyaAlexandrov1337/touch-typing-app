@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dd9e5b0-9cc6-4e10-b2ad-125ba56edea0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SimpleRuningLine/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SimpleRuningLine/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +66,7 @@
       <workItem from="1646588785091" duration="31437000" />
       <workItem from="1646720525564" duration="1238000" />
       <workItem from="1646724717623" duration="3810000" />
-      <workItem from="1646949994066" duration="1770000" />
+      <workItem from="1646949994066" duration="2141000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Create-react-app">
       <created>1646113402388</created>
@@ -231,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646728647364</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Added mobile input">
+      <created>1646952005103</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1646952005103</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +266,7 @@
     <MESSAGE value="Fixed responsive style#2" />
     <MESSAGE value="Fixed responsive style#3" />
     <MESSAGE value="Fixed responsive style#4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed responsive style#4" />
+    <MESSAGE value="Added mobile input" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added mobile input" />
   </component>
 </project>
