@@ -77,7 +77,7 @@ export function SimpleRunningLineComponent({ count } : { count: number }) {
   return (
     <>
       {/* eslint-disable-next-line jsx-a11y/no-autofocus */}
-      <input autoFocus style={{ visibility: 'hidden' }} />
+      <input autoFocus />
       <div className={css(style(themeLabel).Text)}>
         <p>
           <span className={css(style(themeLabel).CharacterOut)}>
