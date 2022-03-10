@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import { css } from 'aphrodite-to-jss';
 import { useRecoilValue } from 'recoil';
 import { useKeyPress } from '../../hooks/useKeyPress';
@@ -25,12 +25,6 @@ export function SimpleRunningLineComponent({ count } : { count: number }) {
 
   const [accuracy, setAccuracy] = useState('');
   const [typedChars, setTypedChars] = useState('');
-
-  const searchInput = useRef(null);
-
-  useEffect(() => {
-    searchInput.current.focus();
-  }, []);
 
   useKeyPress((key) => {
     if (!startTime) {
@@ -83,7 +77,8 @@ export function SimpleRunningLineComponent({ count } : { count: number }) {
   return (
     <div className={css(style(themeLabel).Text)}>
       <p>
-        <input ref={searchInput} style={{ visibility: 'hidden' }} />
+        {/* eslint-disable-next-line jsx-a11y/no-autofocus */}
+        <input autoFocus style={{ visibility: 'hidden' }} />
         <span className={css(style(themeLabel).CharacterOut)}>
           {(leftPadding + outgoingChars).slice(-20)}
         </span>
