@@ -75,20 +75,22 @@ export function SimpleRunningLineComponent({ count } : { count: number }) {
   if (incomingChars.length === 0 && currentChar === '') return <SimpleChooseComponent isTried />;
 
   return (
-    <div className={css(style(themeLabel).Text)}>
-      <p>
-        {/* eslint-disable-next-line jsx-a11y/no-autofocus */}
-        <input autoFocus style={{ visibility: 'hidden' }} />
-        <span className={css(style(themeLabel).CharacterOut)}>
-          {(leftPadding + outgoingChars).slice(-20)}
-        </span>
-        <span className={css(style(themeLabel).CharacterCurrent)}>{currentChar}</span>
-        <span>{incomingChars.substring(0, 20)}</span>
-      </p>
-      <h3>
-        {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
-        WPM: {wpm} | ACC: {accuracy}%
-      </h3>
-    </div>
+    <>
+      {/* eslint-disable-next-line jsx-a11y/no-autofocus */}
+      <input autoFocus style={{ visibility: 'hidden' }} />
+      <div className={css(style(themeLabel).Text)}>
+        <p>
+          <span className={css(style(themeLabel).CharacterOut)}>
+            {(leftPadding + outgoingChars).slice(-20)}
+          </span>
+          <span className={css(style(themeLabel).CharacterCurrent)}>{currentChar}</span>
+          <span>{incomingChars.substring(0, 20)}</span>
+        </p>
+        <h3>
+          {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
+          WPM: {wpm} | ACC: {accuracy}%
+        </h3>
+      </div>
+    </>
   );
 }

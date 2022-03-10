@@ -66,7 +66,7 @@
       <workItem from="1646588785091" duration="31437000" />
       <workItem from="1646720525564" duration="1238000" />
       <workItem from="1646724717623" duration="3810000" />
-      <workItem from="1646949994066" duration="2141000" />
+      <workItem from="1646949994066" duration="2521000" />
     </task>
     <task id="LOCAL-00001" summary="Initialized Create-react-app">
       <created>1646113402388</created>
@@ -236,7 +236,21 @@
       <option name="project" value="LOCAL" />
       <updated>1646952005103</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added mobile input">
+      <created>1646952154698</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1646952154698</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Added mobile input">
+      <created>1646952346136</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1646952346136</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
